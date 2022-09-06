@@ -1,0 +1,166 @@
+$home-font: "Montserrat";
+$home-btn-color: #90b928;
+
+@media (min-width: 768px) {
+    .home-nav {
+        height: 100vh;
+        .navbar-nav {
+            border-bottom: 0 !important;
+        }
+    }
+
+    #home-carousel {
+        height: 983px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-nav {
+        margin-bottom: 150px !important;
+    }
+
+    .home-about-us {
+        margin-bottom: 5rem;
+    }
+
+    .home-cards {
+        margin-bottom: 100px !important;
+        display: block;
+    }
+
+    .home-contact-us {
+        margin-bottom: 7rem !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-about-us-sacks {
+        img {
+            transform: translate(25%, 0%);
+        }
+    }
+}
+
+#home {
+    font-family: $home-font;
+}
+
+.home-nav {
+    background-image: url(/assets/img/back-ground/nav-background.jpg);
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.72), rgba(255, 255, 255, 0.01)),
+    url(/assets/img/back-ground/asd.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: white;
+
+    .navbar {
+        border-bottom: 0;
+        .navbar-nav{
+            .show{
+                
+            }
+        }
+    }
+
+    .nav-link {
+        color: #e8e8e8 !important;
+
+        &.active p {
+            color: #ffffff !important;
+            &::after {
+                display: block;
+                border-bottom: 3px solid #ffffff !important;
+                width: 22px;
+                content: "";
+                margin: auto;
+            }
+        }
+    }
+}
+
+#home-carousel {
+    .owl-carousel{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .owl-prev,
+        .owl-next{
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.home-btn {
+    padding: 9px 50px;
+    color: $home-btn-color;
+    border: 1px solid $home-btn-color;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+        color: white;
+        background-color: $home-btn-color;
+        box-shadow: none;
+    }
+}
+
+.home-cards {
+    overflow: hidden;
+}
+
+.home-card {
+    height: 478px !important;
+
+    .home-card-inner {
+        width: 100%;
+        height: 100%;
+        &:hover .img-overlay {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    }
+
+    .img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        opacity: 0;
+
+        .img-overlay-icon {
+            padding: 30px 50px;
+            border: 1px solid white;
+            color: white;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%,-50%);
+        }
+    }
+}
+.background-2{
+    background-image: url(/assets/img/deniz-kagit.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.background-1{
+    background-image: url(/assets/img/korupak.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}

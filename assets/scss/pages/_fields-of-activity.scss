@@ -1,0 +1,65 @@
+$fields-of-activity-card-title-font:'Montserrat Medium';
+$fields-of-activity-card-text-font:'Montserrat';
+$fields-of-activity-card-color:#000000;
+
+@media (min-width:768px) {
+    .fields-of-activity-card{
+        &:nth-child(odd){
+            padding-right: 50px;
+        }
+        &:nth-child(even){
+            padding-left: 50px;
+        }
+    }
+    
+    #fields-of-activity{
+        margin-top: 150px !important;
+        margin-bottom: 150px !important;
+    }
+}
+
+#fields-of-activity{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-family: 'Montserrat';
+    overflow: hidden;
+}
+
+.fields-of-activity-card-inner{
+    color: white;
+    padding: 30px;
+    box-shadow: 0px 5px 5px 2px rgba($color: $fields-of-activity-card-color, $alpha: .2);
+    border: 1px solid black;
+
+    &:hover{
+        box-shadow: none;
+        border: 1px solid $fields-of-activity-card-color;
+        cursor: default;
+    }
+
+    .fields-of-activity-card-title{
+        font-family: $fields-of-activity-card-title-font;
+    }
+    
+    .fields-of-activity-card-text{
+        font-family: $fields-of-activity-card-text-font;
+    }
+}
+
+.activity-field-background-1{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    url(/assets/img/ambalaj.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.activity-field-background-2{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    url(/assets/img/odule.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
