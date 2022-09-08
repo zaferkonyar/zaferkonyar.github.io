@@ -134,14 +134,14 @@ p {
 }
 
 .activity-field-background-1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(/assets/img/ambalaj.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(/assets/img/odule.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .activity-field-background-2 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(/assets/img/odule.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(/assets/img/ambalaj.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -234,14 +234,14 @@ p {
 
 .home-btn {
   padding: 9px 50px;
-  color: #90b928;
-  border: 1px solid #90b928;
+  color: #1e1c1c;
+  border: 1px solid #1e1c1c;
   border-radius: 5px;
 }
 
 .home-btn:hover, .home-btn:focus {
   color: white;
-  background-color: #90b928;
+  background-color: #1e1c1c;
   box-shadow: none;
 }
 
